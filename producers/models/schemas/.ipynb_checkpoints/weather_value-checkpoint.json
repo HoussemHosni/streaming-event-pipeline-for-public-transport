@@ -1,0 +1,15 @@
+{
+  "type": "record",
+  "name": "weather.value",
+  "namespace": "com.smart.transport",
+  "fields": [
+    {"name": "temperature", "type": "float"},
+    {"name": "status",
+     "type": {
+         "type": "enum",
+         "name": "weather_status",
+         "symbols": ["sunny", "partly_cloudy", "cloudy", "windy", "precipitation"]
+     } 
+    }
+  ]
+}
